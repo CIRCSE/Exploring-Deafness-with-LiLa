@@ -177,19 +177,19 @@ SELECT ?syn
        (COUNT(DISTINCT ?l) AS ?nLemmas)
        (GROUP_CONCAT(DISTINCT ?lab; separator=", ") AS ?lemmas)
 WHERE {
-  # synset evocati dal lemma di partenza
+  # synsets evoked by the selected lemma
   ?le0 ontolex:canonicalForm <http://lila-erc.eu/data/id/lemma/127095> ; # <http://lila-erc.eu/data/id/lemma/127092> for "surditas"
        ontolex:evokes ?syn .
 
-  # solo synset di Latin WordNet
+  # synsets taken from Latin WordNet
   FILTER(STRSTARTS(STR(?syn), "http://lila-erc.eu/data/lexicalResources/LatinWordNet/id/LexicalConcept/"))
 
-  # tutti i lemmi che evocano ciascun synset
+  # lemmas of the same synset
   ?le ontolex:evokes ?syn ;
       ontolex:canonicalForm ?l .
   ?l rdfs:label ?lab .
 
-  # definizione
+  # definitions
   OPTIONAL {
     ?syn (skos:definition | wn:definition | wn:definition/rdf:value | wn:gloss) ?def .
   }
