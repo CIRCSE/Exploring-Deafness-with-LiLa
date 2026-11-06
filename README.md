@@ -1,6 +1,7 @@
 # Exploring-Deafness-with-LiLa
 
-This repository contains a set of query for exploring the concept of "deafness" in Latin using the LiLa Knowledge Base. The data extracted from these queries have been presented at the "[Deafness in the Premodern Mediterranean](https://csmbr.fondazionecomel.org/events/vivamente-conferences/deafness-premodern-mediterranean/)" conference (Pisa, 17-18 November 2026).
+This repository contains a set of queries designed to explore the concept of "deafness" in Latin using the LiLa Knowledge Base. The data retrieved through these queries were presented at the "[Deafness in the Premodern Mediterranean](https://csmbr.fondazionecomel.org/events/vivamente-conferences/deafness-premodern-mediterranean/)" conference (Pisa, 17-18 November 2026).
+The queries can be easily modified to target lemmas other than surdus or surditas by simply replacing the corresponding URI. To find the URI of a lemma of interest, use the [Lemma Bank Query Interface](https://lila-erc.eu/query/). 
 
 ## Endpoint
 Data can be queried through the following endpoint: [https://lila-erc.eu/sparql/](https://lila-erc.eu/sparql/).
