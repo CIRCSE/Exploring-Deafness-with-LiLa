@@ -67,7 +67,7 @@ ORDER BY ?label
 
 ```
 
-3) Finds the lemmas belonging to the derivational family of _surdus_. For each derived lemma it returns its label, the label of its immediate parent in the derivation, the number of corpus tokens attesting it, and its Lewis & Short sense definitions (one row per sense). Results are sorted by token frequency, highest first.
+3) Finds the lemmas belonging to the derivational family of _surdus_. For each derived lemma it returns its label, the label of its immediate parent in the derivation, the number of corpus tokens attesting it, and its Lewis & Short sense definitions, if available (one row per sense). Results are sorted by token frequency, highest first.
 
 ```
 PREFIX ontolex:  <http://www.w3.org/ns/lemon/ontolex#>
